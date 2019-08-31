@@ -15,6 +15,8 @@ public class PickUpWeapon : MonoBehaviour
     private EnemySpawnParent m_enemySpawnParent;
     [SerializeField]
     private Animator m_doorsAnimator;
+    [SerializeField]
+    private GameObject m_enemiesContainer;
 
     private Collider m_myBoxCollider;
     private bool m_isPlayerGetWeapon = false;
@@ -57,6 +59,11 @@ public class PickUpWeapon : MonoBehaviour
                 PlayerGetWeapon(other.gameObject, false);
                 ChangeHintText("Украина незалежна держава!");
                 m_doorsAnimator.SetTrigger("DoorsOpen");
+                foreach (RigidbodyEnemyTrigger enemy in m_enemiesContainer.GetComponentsInChildren<RigidbodyEnemyTrigger>())
+                {
+                    enemy.DestroyMe();
+                    print(enemy.name);
+                }
             }
         }
     }

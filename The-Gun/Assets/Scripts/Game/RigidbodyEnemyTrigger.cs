@@ -25,7 +25,7 @@ public class RigidbodyEnemyTrigger : MonoBehaviour
         }
     }
 
-    private void DestroyMe()
+    public void DestroyMe()
     {
         foreach (Transform child in GetComponentsInChildren<Transform>())
         {
@@ -42,7 +42,7 @@ public class RigidbodyEnemyTrigger : MonoBehaviour
 
     private void HitAndDie()
     {
-        // todo take a hit
+        // todo take a hit hit
         DestroyMe();
     }
 
