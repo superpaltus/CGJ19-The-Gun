@@ -18,7 +18,7 @@ public class EnemySpawn : MonoBehaviour
 
     private void Start()
     {
-        m_currentSpawnTime = Random.Range(0f, m_maxSpawnTime);
+        m_currentSpawnTime = Random.Range(m_maxSpawnTime/2 , m_maxSpawnTime);
     }
 
     private void Update()
