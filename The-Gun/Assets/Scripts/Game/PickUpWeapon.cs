@@ -13,6 +13,8 @@ public class PickUpWeapon : MonoBehaviour
     private Text m_txtHint;
     [SerializeField]
     private EnemySpawnParent m_enemySpawnParent;
+    [SerializeField]
+    private Animator m_doorsAnimator;
 
     private Collider m_myBoxCollider;
     private bool m_isPlayerGetWeapon = false;
@@ -41,6 +43,7 @@ public class PickUpWeapon : MonoBehaviour
             {
                 print("get");
                 PlayerGetWeapon(other.gameObject, true);
+                m_doorsAnimator.SetTrigger("DoorsClose");
                 ChangeHintText("Fight them all!");
             }
         }
@@ -53,6 +56,7 @@ public class PickUpWeapon : MonoBehaviour
                 print("unget");
                 PlayerGetWeapon(other.gameObject, false);
                 ChangeHintText("Украина незалежна держава!");
+                m_doorsAnimator.SetTrigger("DoorsOpen");
             }
         }
     }

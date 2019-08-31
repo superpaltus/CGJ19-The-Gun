@@ -43,7 +43,7 @@ public class PlayerController : MonoBehaviour
         ProcessRotation();  // look at cursor
         //ProcessHitting();   // melee attack
         //ProcessShooting();  // range attack
-        StartCoroutine(ProcessDash());  // boosting if 'Jump' pressed
+        //StartCoroutine(ProcessDash());  // boosting if 'Jump' pressed
 
     }
 
