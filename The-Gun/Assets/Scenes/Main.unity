@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1024,7 +1024,7 @@ Transform:
   m_GameObject: {fileID: 798745317}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -70, z: 0}
-  m_LocalScale: {x: 20, y: 1, z: 20}
+  m_LocalScale: {x: 205.48001, y: 10.274, z: 205.48001}
   m_Children: []
   m_Father: {fileID: 175709520}
   m_RootOrder: 0
@@ -1060,7 +1060,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 015501cb72610ce4c88d765a5fbdb4d7, type: 2}
+  - {fileID: 2100000, guid: 92cab8593f82afd46b7cfe090c262541, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6638,6 +6638,18 @@ PrefabInstance:
       propertyPath: m_Text
       value: YOU DIED
       objectReference: {fileID: 0}
+    - target: {fileID: 6691573945772675, guid: 0fd7901a8663ee7469300648eef90075, type: 3}
+      propertyPath: m_Color.r
+      value: 0.8862746
+      objectReference: {fileID: 0}
+    - target: {fileID: 6691573945772675, guid: 0fd7901a8663ee7469300648eef90075, type: 3}
+      propertyPath: m_Color.g
+      value: 0.7254902
+      objectReference: {fileID: 0}
+    - target: {fileID: 6691573945772675, guid: 0fd7901a8663ee7469300648eef90075, type: 3}
+      propertyPath: m_Color.b
+      value: 0.21960786
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0fd7901a8663ee7469300648eef90075, type: 3}
 --- !u!224 &1805994836 stripped
@@ -6958,7 +6970,7 @@ PrefabInstance:
         type: 3}
       propertyPath: shot
       value: 
-      objectReference: {fileID: 8300000, guid: 8dad0a6a8f006d843b47e84ff3dd2094, type: 3}
+      objectReference: {fileID: 8300000, guid: 2205ea0b27a763241aa1e92c832cacec, type: 3}
     - target: {fileID: 801913306171085383, guid: 53665a2e29026104e85e92ac7784047e,
         type: 3}
       propertyPath: audioSource
