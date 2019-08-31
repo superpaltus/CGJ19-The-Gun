@@ -51,7 +51,7 @@ public class PickUpWeapon : MonoBehaviour
         {
             if (other.gameObject.tag == "Player" && Input.GetKeyDown(KeyCode.E))
             {
-                m_canvasWithScore.SetActive(true);
+                //m_canvasWithScore.SetActive(true);
                 PlayerGetWeapon(other.gameObject, true);
                 m_doorsAnimator.SetTrigger("DoorsClose");
                 ChangeHintText("Kill them all! Don't give up!");
@@ -62,7 +62,7 @@ public class PickUpWeapon : MonoBehaviour
         {
             if (other.gameObject.tag == "Player" && Input.GetKeyDown(KeyCode.E))
             {
-                m_canvasWithScore.SetActive(false);
+                //m_canvasWithScore.SetActive(false);
                 PlayerGetWeapon(other.gameObject, false);
                 ChangeHintText("Wow! You are smart!");
                 m_arena.GetComponent<MeshRenderer>().materials = m_floorGood;
@@ -101,9 +101,8 @@ public class PickUpWeapon : MonoBehaviour
     IEnumerator ResetTrigger()
     {
         m_myBoxCollider.enabled = false;
-        print("trigger inactive");
         yield return new WaitForSeconds(3f);
         m_myBoxCollider.enabled = true;
-        print("trigger ready again");
+
     }
 }
