@@ -45,6 +45,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_speed: 25
+--- !u!54 &7458923101749319414
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5688642460177985482}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 84
+  m_CollisionDetection: 0
 --- !u!65 &1007342328
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -107,7 +123,7 @@ PrefabInstance:
     - target: {fileID: 7982841570589685210, guid: 9ce6ff0dbe9be1449bbf719a75f5ea6d,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 7982841570589685210, guid: 9ce6ff0dbe9be1449bbf719a75f5ea6d,
         type: 3}
@@ -117,7 +133,7 @@ PrefabInstance:
     - target: {fileID: 7982841570589685210, guid: 9ce6ff0dbe9be1449bbf719a75f5ea6d,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 7982841570589685210, guid: 9ce6ff0dbe9be1449bbf719a75f5ea6d,
         type: 3}
@@ -132,7 +148,7 @@ PrefabInstance:
     - target: {fileID: 7982841570589685210, guid: 9ce6ff0dbe9be1449bbf719a75f5ea6d,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 7982841570589685210, guid: 9ce6ff0dbe9be1449bbf719a75f5ea6d,
         type: 3}

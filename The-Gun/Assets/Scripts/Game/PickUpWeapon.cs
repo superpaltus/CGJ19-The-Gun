@@ -11,6 +11,8 @@ public class PickUpWeapon : MonoBehaviour
     private GameObject m_canvasWithHint;
     [SerializeField]
     private Text m_txtHint;
+    [SerializeField]
+    private EnemySpawnParent m_enemySpawnParent;
 
     private Collider m_myBoxCollider;
     private bool m_isPlayerGetWeapon = false;
@@ -68,6 +70,7 @@ public class PickUpWeapon : MonoBehaviour
         player.GetComponent<PlayerController>().SetWeapon(isGet);
         m_weaponOnPedestal.SetActive(!isGet);
         m_isPlayerGetWeapon = isGet;
+        m_enemySpawnParent.ChangeEnemySpawnsActivity();
         StartCoroutine(ResetTrigger());
     }
 

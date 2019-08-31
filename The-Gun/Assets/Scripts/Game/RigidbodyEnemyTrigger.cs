@@ -30,7 +30,9 @@ public class RigidbodyEnemyTrigger : MonoBehaviour
         {
             if (child != transform)
             {
-                child.gameObject.AddComponent<Rigidbody>();
+                Rigidbody rb = child.gameObject.AddComponent<Rigidbody>();
+                Vector3 offset = new Vector3(Random.Range(2f, 10f), Random.Range(2f, 10f), Random.Range(2f, 10f));
+                rb.AddForce(offset, ForceMode.Impulse);
             }
             m_isActivated = true;
             StartCoroutine(DelayDestroy());
