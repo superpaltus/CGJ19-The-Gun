@@ -9,9 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1612719574196774466}
-  - component: {fileID: 4654113223314345840}
+  - component: {fileID: 8572640192815240220}
   m_Layer: 0
-  m_Name: RobotFinish
+  m_Name: Robot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -32,7 +32,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4654113223314345840
+--- !u!114 &8572640192815240220
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_speed: 25
---- !u!65 &1007342328
+--- !u!65 &7234886035043939946
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -56,9 +56,9 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.1, y: 3.66, z: 2.74}
-  m_Center: {x: 0, y: 2.1, z: 0}
---- !u!114 &1007342327
+  m_Size: {x: 2, y: 3, z: 2}
+  m_Center: {x: 0, y: 2, z: 0}
+--- !u!114 &8740090287685805512
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -71,7 +71,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_mainParent: {fileID: 1612719574196774467}
-  m_myAI: {fileID: 4654113223314345840}
+  m_myAI: {fileID: 8572640192815240220}
 --- !u!1001 &1612719574152783875
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -107,7 +107,7 @@ PrefabInstance:
     - target: {fileID: 7982841570589685210, guid: 9ce6ff0dbe9be1449bbf719a75f5ea6d,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 7982841570589685210, guid: 9ce6ff0dbe9be1449bbf719a75f5ea6d,
         type: 3}
@@ -117,7 +117,7 @@ PrefabInstance:
     - target: {fileID: 7982841570589685210, guid: 9ce6ff0dbe9be1449bbf719a75f5ea6d,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 7982841570589685210, guid: 9ce6ff0dbe9be1449bbf719a75f5ea6d,
         type: 3}
@@ -132,7 +132,7 @@ PrefabInstance:
     - target: {fileID: 7982841570589685210, guid: 9ce6ff0dbe9be1449bbf719a75f5ea6d,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 7982841570589685210, guid: 9ce6ff0dbe9be1449bbf719a75f5ea6d,
         type: 3}

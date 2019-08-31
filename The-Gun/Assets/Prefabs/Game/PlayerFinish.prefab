@@ -45,8 +45,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0.5, z: 0}
+  m_Size: {x: 2, y: 4, z: 2}
+  m_Center: {x: 0, y: 2, z: 0}
 --- !u!54 &3004903284333149271
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -61,7 +61,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 80
+  m_Constraints: 84
   m_CollisionDetection: 0
 --- !u!114 &3004903284333149264
 MonoBehaviour:
@@ -75,9 +75,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a85129b20d98ae94f86ac21ef5576ebb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
-  dashTime: 0.5
-  dashForce: 3
+  moveSpeed: 30
+  dashTime: 0.2
+  dashForce: 2
   weapon: {fileID: 6223974598014120606}
 --- !u!1001 &6922612038966875145
 PrefabInstance:

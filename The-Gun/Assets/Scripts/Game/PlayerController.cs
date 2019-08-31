@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     [Header("General")]
-    [SerializeField] [Range(0.01f, 10f)] float moveSpeed = 5f;
+    [SerializeField] [Range(0.01f, 30f)] float moveSpeed = 25f;
 
     [Header("Dash")]
     [SerializeField] [Range(0.01f, 10f)] float dashTime = 0.5f;
