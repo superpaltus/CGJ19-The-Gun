@@ -3,7 +3,27 @@ guid: 1c74c36b1c1844f4aa2a5557858886ff
 ModelImporter:
   serializedVersion: 26
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FaceEvil
+    second: {fileID: 2100000, guid: ece037f6de6395a4898ad4deef7d8f06, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.002
+    second: {fileID: 2100000, guid: 7bee17c14eb90314696b726f23c89a8d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.007
+    second: {fileID: 2100000, guid: 439cf67059286e84bad7554e393a4db6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.008
+    second: {fileID: 2100000, guid: e64ae61756d78f94f922498b2c47d30b, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

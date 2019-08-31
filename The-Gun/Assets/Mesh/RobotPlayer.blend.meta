@@ -3,7 +3,32 @@ guid: 13503ce011bfc264f87a4cb82df615d3
 ModelImporter:
   serializedVersion: 26
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FaceGood
+    second: {fileID: 2100000, guid: 6d6dea91d068f104fa074286da99a0ae, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.001
+    second: {fileID: 2100000, guid: 2e39701b9ff30e94e9b5918992d289d3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.003
+    second: {fileID: 2100000, guid: b3d16e12f046eed46bb3935bc49cb298, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.005
+    second: {fileID: 2100000, guid: bae2fd247e47471439e9678900b5dff8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.009
+    second: {fileID: 2100000, guid: eada9e14fb52af648b78a2f348e0b51e, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
