@@ -11,6 +11,9 @@ public class PlayerController : MonoBehaviour
     [SerializeField] [Range(0.01f, 10f)] float dashTime = 0.5f;
     [SerializeField] [Range(0.01f, 10f)] float dashForce = 3f;
 
+    [Header("Links")]
+    [SerializeField] GameObject weapon;
+
     int floorMask;
 
     bool isDashing = false;
@@ -123,5 +126,10 @@ public class PlayerController : MonoBehaviour
                 isDashing = false;
             }
         }
+    }
+
+    public void SetWeapon(bool isSet)
+    {
+        weapon.SetActive(isSet);
     }
 }
