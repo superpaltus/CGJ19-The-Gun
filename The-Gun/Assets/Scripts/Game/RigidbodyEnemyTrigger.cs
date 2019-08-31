@@ -14,6 +14,7 @@ public class RigidbodyEnemyTrigger : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if (m_isActivated) return;
+
         if (other.gameObject.GetComponent<BulletProp>())
         {
             DestroyMe();
