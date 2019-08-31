@@ -27,6 +27,8 @@ public class RigidbodyEnemyTrigger : MonoBehaviour
 
     public void DestroyMe()
     {
+        if (m_isActivated) return;
+
         foreach (Transform child in GetComponentsInChildren<Transform>())
         {
             if (child != transform)
