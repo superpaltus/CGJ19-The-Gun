@@ -1294,7 +1294,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 567775472503dc949bdd00caf24cc43f, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.25
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -6939,6 +6939,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3004903284333149264, guid: 53665a2e29026104e85e92ac7784047e,
+        type: 3}
+      propertyPath: shot
+      value: 
+      objectReference: {fileID: 8300000, guid: 8dad0a6a8f006d843b47e84ff3dd2094, type: 3}
     - target: {fileID: 6223974598014120606, guid: 53665a2e29026104e85e92ac7784047e,
         type: 3}
       propertyPath: m_IsActive
@@ -6949,6 +6954,16 @@ PrefabInstance:
       propertyPath: m_bulletContainer
       value: 
       objectReference: {fileID: 259708843}
+    - target: {fileID: 801913306171085383, guid: 53665a2e29026104e85e92ac7784047e,
+        type: 3}
+      propertyPath: shot
+      value: 
+      objectReference: {fileID: 8300000, guid: 8dad0a6a8f006d843b47e84ff3dd2094, type: 3}
+    - target: {fileID: 801913306171085383, guid: 53665a2e29026104e85e92ac7784047e,
+        type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 963194230}
     - target: {fileID: 5844890211178306598, guid: 53665a2e29026104e85e92ac7784047e,
         type: 3}
       propertyPath: m_cameraController

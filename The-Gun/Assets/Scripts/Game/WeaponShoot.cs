@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class WeaponShoot : MonoBehaviour
 {
+    [SerializeField] AudioClip shot;
+    [SerializeField] AudioSource audioSource;
+
+
     [SerializeField]
     private Transform m_bulletPivot;
     [SerializeField]
@@ -29,6 +33,7 @@ public class WeaponShoot : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
+            audioSource.PlayOneShot(shot);
             GameObject newBullet = Instantiate(m_bulletPrefab, m_bulletPivot.position, Quaternion.identity);
             newBullet.transform.SetParent(m_bulletContainer, true);
             Vector3 distance = (newBullet.transform.position - m_myTransform.position).normalized;
