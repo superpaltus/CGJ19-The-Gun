@@ -6,6 +6,17 @@ using UnityEngine.UI;
 public class PickUpWeapon : MonoBehaviour
 {
     [SerializeField]
+    GameObject m_canvasWithScore;
+    [SerializeField]
+    Text m_scoreText;
+    [SerializeField]
+    Material[] m_floorGood;
+    [SerializeField]
+    Material[] m_floorBad;
+    [SerializeField]
+    GameObject m_arena;
+
+    [SerializeField]
     private GameObject m_weaponOnPedestal;
     [SerializeField]
     private GameObject m_canvasWithHint;
@@ -36,33 +47,30 @@ public class PickUpWeapon : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        print("im on collider");
-
         if (!m_isPlayerGetWeapon)
         {
-            print("ready to get");
             if (other.gameObject.tag == "Player" && Input.GetKeyDown(KeyCode.E))
             {
-                print("get");
+                m_canvasWithScore.SetActive(true);
                 PlayerGetWeapon(other.gameObject, true);
                 m_doorsAnimator.SetTrigger("DoorsClose");
-                ChangeHintText("Fight them all!");
+                ChangeHintText("Kill them all! Don't give up!");
+                m_arena.GetComponent<MeshRenderer>().materials = m_floorBad;
             }
         }
         else 
         {
-            print("ready to unget");
-
             if (other.gameObject.tag == "Player" && Input.GetKeyDown(KeyCode.E))
             {
-                print("unget");
+                m_canvasWithScore.SetActive(false);
                 PlayerGetWeapon(other.gameObject, false);
-                ChangeHintText("Украина незалежна держава!");
+                ChangeHintText("Wow! You are smart!");
+                m_arena.GetComponent<MeshRenderer>().materials = m_floorGood;
+
                 m_doorsAnimator.SetTrigger("DoorsOpen");
                 foreach (RigidbodyEnemyTrigger enemy in m_enemiesContainer.GetComponentsInChildren<RigidbodyEnemyTrigger>())
                 {
                     enemy.DestroyMe();
-                    print(enemy.name);
                 }
             }
         }
@@ -94,7 +102,7 @@ public class PickUpWeapon : MonoBehaviour
     {
         m_myBoxCollider.enabled = false;
         print("trigger inactive");
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(3f);
         m_myBoxCollider.enabled = true;
         print("trigger ready again");
     }

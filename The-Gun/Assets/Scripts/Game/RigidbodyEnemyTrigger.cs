@@ -21,6 +21,8 @@ public class RigidbodyEnemyTrigger : MonoBehaviour
         }
         if (other.gameObject.GetComponent<PlayerController>())
         {
+            other.GetComponent<PlayerController>().GetComponentInChildren<PlayerDie>().KillPlayer();
+            other.GetComponent<PlayerController>().enabled = false;
             HitAndDie();
         }
     }
