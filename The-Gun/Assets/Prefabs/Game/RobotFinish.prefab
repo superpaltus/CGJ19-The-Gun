@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1612719574196774466}
   m_Layer: 0
-  m_Name: RobotFinish 1
+  m_Name: RobotFinish
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31,6 +31,31 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1007342328
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5688642460177985482}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.33, y: 3.66, z: 3.2}
+  m_Center: {x: 0, y: 2.1, z: 0}
+--- !u!114 &1007342327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5688642460177985482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20e3fdc9a47bc684a900320224a1f9f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1612719574152783875
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -100,6 +125,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ce6ff0dbe9be1449bbf719a75f5ea6d, type: 3}
+--- !u!1 &5688642460177985482 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6382614172574599113, guid: 9ce6ff0dbe9be1449bbf719a75f5ea6d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1612719574152783875}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8694559674995449305 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7982841570589685210, guid: 9ce6ff0dbe9be1449bbf719a75f5ea6d,
